@@ -10,8 +10,8 @@
     <table name="inventory_geoname" resource="default" engine="innodb">
 
         <!--add primary key-->
-	    <column xsi:type="int" name="inventory_geoname_id" padding="10" unsigned="true" nullable="false"
-                identity="true" comment="inventory_geoname ID"/>
+	    <column xsi:type="int" name="ignore_id" padding="10" unsigned="true" nullable="false"
+                identity="true" comment="Ignore ID"/>
 
         <column xsi:type="varchar" name="country_code" nullable="false" length="64"/>
         <column xsi:type="varchar" name="postcode" nullable="false" length="64"/>
@@ -23,7 +23,7 @@
 
         <!--add primary key-->
         <constraint xsi:type="primary" referenceId="PRIMARY">
-            <column name="inventory_geoname_id"/>
+            <column name="ignore_id"/>
         </constraint>
 
     </table>

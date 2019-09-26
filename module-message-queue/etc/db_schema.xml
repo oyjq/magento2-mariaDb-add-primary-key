@@ -24,14 +24,14 @@
     <table name="queue_poison_pill" resource="default" engine="innodb" comment="Sequence table for poison pill versions">
 
         <!--add primary key-->
-        <column xsi:type="int" name="queue_poison_pill_id" padding="10" unsigned="true" nullable="false"
-                identity="true" comment="queue_poison_pill ID"/>
+        <column xsi:type="int" name="ignore_id" padding="10" unsigned="true" nullable="false"
+                identity="true" comment="Ignore ID"/>
 
         <column xsi:type="varchar" name="version" length="255" nullable="false" comment="Poison Pill version."/>
 
         <!--add primary key-->
         <constraint xsi:type="primary" referenceId="PRIMARY">
-            <column name="queue_poison_pill_id"/>
+            <column name="ignore_id"/>
         </constraint>
 
     </table>

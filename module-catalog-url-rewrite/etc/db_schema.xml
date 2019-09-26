@@ -11,8 +11,8 @@
            comment="url_rewrite_relation">
 
         <!--add primary key-->
-	    <column xsi:type="int" name="url_rewrite_product_category_id" padding="10" unsigned="true" nullable="false"
-                identity="true" comment="url_rewrite_product_category ID"/>
+	    <column xsi:type="int" name="ignore_id" padding="10" unsigned="true" nullable="false"
+                identity="true" comment="Ignore ID"/>
 
         <column xsi:type="int" name="url_rewrite_id" padding="10" unsigned="true" nullable="false" identity="false"
                 comment="url_rewrite_id"/>
@@ -23,7 +23,7 @@
 
         <!--add primary key-->
         <constraint xsi:type="primary" referenceId="PRIMARY">
-            <column name="url_rewrite_product_category_id"/>
+            <column name="ignore_id"/>
         </constraint>
 
         <constraint xsi:type="foreign" referenceId="CAT_URL_REWRITE_PRD_CTGR_PRD_ID_CAT_PRD_ENTT_ENTT_ID"
